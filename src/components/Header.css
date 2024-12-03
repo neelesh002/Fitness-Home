@@ -1,0 +1,103 @@
+.navbar{
+    display:  flex;
+    justify-content:  flex-end;
+    
+    
+    padding: 0 20px;
+    height:  60px;
+    color: white;
+   
+}
+
+.navbar-logo{
+    color: brown;
+    font-family: 'Brush Script MT', cursive;
+    
+    font-size:  24px;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a{
+    color:white ;
+    text-decoration: none;
+    transition: all 0.3s;
+    }
+.nav-links a:hover{
+    color: #ffa500;
+}
+
+.nav-icons{
+    color:  white;
+    cursor: pointer;
+    position: relative;
+}
+
+.order-button{
+    background-color: #ffa500;
+    border:  none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    }
+    .order-button:hover{
+        background-color: #ffa600d2;
+    }
+
+    .mobile-menu-icon{
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      
+    }
+
+@media (max-width:900px) {
+    .nav-links{
+        display: none;
+    }
+   
+    .nav-links-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+       background:#8e8d8d;;
+        align-items: center;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .nav-links-mobile a{
+        color: black;
+        text-decoration: none;
+        padding:  10px 0;
+        width: 100%;
+        text-align: center;
+
+    }
+    .nav-icon{
+        margin-bottom: 10px;
+    }
+
+.nav-links-mobile a:hover{
+   
+background-color: gray;
+}
+.order-button{
+    margin-top: 10px;
+}
+
+}
+
+
